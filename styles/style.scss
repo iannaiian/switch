@@ -3,8 +3,10 @@
 
 // this is for variables
 $primaryClr: #73c74f;
-$headingFont: "Montserrat", sans-serif;
-$contentFont: "Open Sans", sans-serif;
+$headingFont: "Montserrat",
+sans-serif;
+$contentFont: "Open Sans",
+sans-serif;
 $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
 // this is for variables
 
@@ -23,6 +25,7 @@ $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
   background-repeat: no-repeat;
   background-position: center;
 }
+
 // this is for mix ins
 
 body {
@@ -39,7 +42,7 @@ body {
 }
 
 .section-one {
-  background: url("/images/bg1.jpg");
+  background: url("images/bg1.jpg");
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -158,6 +161,7 @@ body {
       text-decoration: none;
     }
   }
+
   span:before {
     @include span-div;
   }
@@ -165,7 +169,7 @@ body {
 
 .gallery {
   background: linear-gradient(rgba(88, 177, 76, 0.7), rgba(88, 177, 76, 0.7)),
-    url("/images/bg2.jpg");
+    url("images/bg2.jpg");
   @include background();
   padding: 100px 0 100px 0;
 
@@ -202,10 +206,12 @@ body {
   p {
     font-family: $contentFont;
   }
+
   h6 {
     font-weight: 700;
     font-size: 14px;
   }
+
   .comp-name {
     font-weight: 100;
     line-height: 0.4em;
@@ -218,28 +224,33 @@ body {
     margin: 0 auto;
     border: 1px solid $primaryClr;
   }
+
   button.owl-prev {
     position: absolute;
     top: 12px;
     left: -35px;
     font-size: 30px !important;
     color: #d0cfcf !important;
+
     &:hover {
       color: #000000 !important;
       transition: 0.5s;
     }
   }
+
   button.owl-next {
     position: absolute;
     top: 12px;
     right: -35px;
     font-size: 30px !important;
     color: #d0cfcf !important;
+
     &:hover {
       color: #000000 !important;
       transition: 0.5s;
     }
   }
+
   span:before {
     @include span-div;
   }
@@ -300,6 +311,7 @@ body {
     @include span-div;
     background-color: #fff;
   }
+
   p {
     padding-top: 20px;
     font-family: $contentFont;
@@ -309,6 +321,7 @@ body {
     list-style: none;
     font-size: 12px;
   }
+
   ul {
     padding: 0;
     padding-top: 20px;
@@ -324,6 +337,7 @@ body {
     color: #444444;
     background-color: #444444;
   }
+
   textarea {
     width: 100%;
     border: none;
@@ -332,6 +346,7 @@ body {
     padding: 5px;
     background-color: #444444;
   }
+
   .submit {
     background-color: $primaryClr;
     display: block;
@@ -342,6 +357,7 @@ body {
     border-radius: 3px;
     padding-top: 5px;
     padding-bottom: 5px;
+
     &:hover {
       background-color: #fff;
       color: $primaryClr;
@@ -355,14 +371,18 @@ body {
   button.owl-next {
     right: -10px !important;
   }
+
   button.owl-prev {
     left: -10px !important;
   }
+
   .row.gallery-row-one {
     padding: 0 !important;
   }
+
   .pre-footer {
     padding: 100px 20px 100px 20px;
   }
 }
+
 // media queries
