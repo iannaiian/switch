@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+
+// this is for variables
+$primaryClr: #73c74f;
+$headingFont: "Montserrat", sans-serif;
+$contentFont: "Open Sans", sans-serif;
+$textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+// this is for variables
+
+// this is for mix ins
+@mixin span-div {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  background-color: #000000;
+  margin-left: -20px;
+}
+
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+// this is for mix ins
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+.subheading {
+  padding: 10px 0 50px 0;
+}
+
+.section-one {
+  background: url("/images/bg1.jpg");
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .nav-link {
+    color: #fff;
+    font-family: $headingFont;
+    font-weight: 100;
+    text-shadow: $textShadow;
+    border-top: 5px solid transparent;
+
+    &:hover {
+      border-top: 5px solid $primaryClr;
+    }
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 48%;
+    font-family: "Lobster", cursive;
+    font-size: 1.8em;
+    color: #fff;
+    text-shadow: $textShadow;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .brand-stamp {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-family: $headingFont;
+      font-weight: 900;
+      font-size: 4em;
+      color: #fff;
+      text-shadow: $textShadow;
+    }
+
+    button {
+      background-color: $primaryClr;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      margin-top: 20px;
+      font-size: 1.3em;
+      font-weight: 100;
+      font-family: $headingFont;
+      border-radius: 40px;
+
+      &:hover {
+        background-color: #fff;
+        color: #94c67e;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+.section-two {
+  padding: 100px 0 150px 0;
+
+  h3 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+  }
+
+  .content {
+    padding-top: 42px;
+  }
+
+  i {
+    color: $primaryClr;
+    font-size: 80px;
+    padding: 20px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+
+  p {
+    font-family: $contentFont;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  h5 {
+    padding: 20px;
+    font-family: $headingFont;
+    font-weight: 900;
+  }
+
+  a {
+    background-color: $primaryClr;
+    border: 1px solid $primaryClr;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: #fff;
+      color: #94c67e;
+      transition: 0.5s;
+      border: 1px solid $primaryClr;
+      text-decoration: none;
+    }
+  }
+  span:before {
+    @include span-div;
+  }
+}
+
+.gallery {
+  background: linear-gradient(rgba(88, 177, 76, 0.7), rgba(88, 177, 76, 0.7)),
+    url("/images/bg2.jpg");
+  @include background();
+  padding: 100px 0 100px 0;
+
+  h3 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+    color: #fff;
+  }
+
+  p {
+    font-family: $contentFont;
+    color: #fff;
+  }
+
+  .row.gallery-row-one {
+    padding-bottom: 30px;
+  }
+
+  span:before {
+    @include span-div;
+    background-color: #fff;
+  }
+}
+
+.testimonials {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h3 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+  }
+
+  p {
+    font-family: $contentFont;
+  }
+  h6 {
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .comp-name {
+    font-weight: 100;
+    line-height: 0.4em;
+    padding-bottom: 20px;
+  }
+
+  .t-profile {
+    border-radius: 50%;
+    width: 50px !important;
+    margin: 0 auto;
+    border: 1px solid $primaryClr;
+  }
+  button.owl-prev {
+    position: absolute;
+    top: 12px;
+    left: -35px;
+    font-size: 30px !important;
+    color: #d0cfcf !important;
+    &:hover {
+      color: #000000 !important;
+      transition: 0.5s;
+    }
+  }
+  button.owl-next {
+    position: absolute;
+    top: 12px;
+    right: -35px;
+    font-size: 30px !important;
+    color: #d0cfcf !important;
+    &:hover {
+      color: #000000 !important;
+      transition: 0.5s;
+    }
+  }
+  span:before {
+    @include span-div;
+  }
+}
+
+.clients {
+  background-color: #f2f1f1;
+  padding: 100px 0 100px 0;
+
+  h3 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+  }
+
+  span:before {
+    @include span-div;
+  }
+
+  p {
+    font-family: $contentFont;
+  }
+
+  img {
+    filter: grayscale(100%);
+    width: 70%;
+  }
+}
+
+.team {
+  background-color: $primaryClr;
+  padding: 100px 0 100px 0;
+
+  h3 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+  }
+
+  span:before {
+    @include span-div;
+  }
+
+  p {
+    font-family: $contentFont;
+  }
+}
+
+.pre-footer {
+  background-color: #343934;
+  color: #fff;
+  padding: 100px 50px 100px 50px;
+
+  h5 {
+    font-family: $headingFont;
+    letter-spacing: 0.3em;
+  }
+
+  span:before {
+    @include span-div;
+    background-color: #fff;
+  }
+  p {
+    padding-top: 20px;
+    font-family: $contentFont;
+  }
+
+  li {
+    list-style: none;
+    font-size: 12px;
+  }
+  ul {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-top: 2px;
+    border-radius: 3px;
+    padding: 5px;
+    color: #444444;
+    background-color: #444444;
+  }
+  textarea {
+    width: 100%;
+    border: none;
+    margin-top: 2px;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #444444;
+  }
+  .submit {
+    background-color: $primaryClr;
+    display: block;
+    max-width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &:hover {
+      background-color: #fff;
+      color: $primaryClr;
+      transition: 0.5s;
+    }
+  }
+}
+
+// media queries
+@media (max-width: 600px) {
+  button.owl-next {
+    right: -10px !important;
+  }
+  button.owl-prev {
+    left: -10px !important;
+  }
+  .row.gallery-row-one {
+    padding: 0 !important;
+  }
+  .pre-footer {
+    padding: 100px 20px 100px 20px;
+  }
+}
+// media queries
