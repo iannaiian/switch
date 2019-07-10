@@ -42,7 +42,7 @@ body {
 }
 
 .section-one {
-  background: url("images/bg1.jpg");
+  background: url("../images/bg1.jpg");
   height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ body {
 
 .gallery {
   background: linear-gradient(rgba(88, 177, 76, 0.7), rgba(88, 177, 76, 0.7)),
-    url("images/bg2.jpg");
+    url("../images/bg2.jpg");
   @include background();
   padding: 100px 0 100px 0;
 
