@@ -13,6 +13,15 @@ body {
   padding: 10px 0 50px 0;
 }
 
+.navbar-toggler-icon {
+  margin-top: 25px;
+}
+
+i.fas.fa-bars {
+  color: #fff;
+  font-size: 37px;
+}
+
 .section-one {
   background: url("../images/bg1.jpg");
   height: 800px;
@@ -353,7 +362,7 @@ body {
   margin-top: 2px;
   border-radius: 3px;
   padding: 5px;
-  color: #444444;
+  color: #ffffff;
   background-color: #444444;
 }
 
@@ -363,6 +372,7 @@ body {
   margin-top: 2px;
   border-radius: 3px;
   padding: 5px;
+  color: #ffffff;
   background-color: #444444;
 }
 
@@ -385,6 +395,34 @@ body {
   transition: 0.5s;
 }
 
+.mid-footer {
+  background-color: #262626;
+  color: #fff;
+  padding: 50px;
+}
+
+.mid-footer h3 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3em;
+  color: #000000;
+}
+
+.mid-footer span:before {
+  content: "";
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  background-color: #000000;
+  margin-left: -20px;
+  background-color: black;
+}
+
+.mid-footer img {
+  width: 70%;
+  -webkit-filter: brightness(0%);
+          filter: brightness(0%);
+}
+
 @media (max-width: 600px) {
   button.owl-next {
     right: -10px !important;
@@ -397,6 +435,18 @@ body {
   }
   .pre-footer {
     padding: 100px 20px 100px 20px;
+  }
+  .navbar-nav {
+    margin-top: 40px;
+  }
+  .section-one {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .brand-stamp {
+    height: 70vh !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
