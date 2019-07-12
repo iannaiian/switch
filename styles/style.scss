@@ -24,6 +24,12 @@ $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
   background-position: center;
 }
 
+@mixin category {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 // this is for mix ins
 
 body {
@@ -46,6 +52,24 @@ body {
 i.fas.fa-bars {
   color: #fff;
   font-size: 37px;
+}
+
+.social {
+  background-color: #fff;
+  display: inline;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 20px;
+
+  .fa-dribbble {
+    color: #f03131;
+  }
+  .fa-facebook {
+    color: #317df0;
+  }
+  .fa-twitter {
+    color: #7dc5ff;
+  }
 }
 
 .section-one {
@@ -169,7 +193,7 @@ i.fas.fa-bars {
     }
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
   }
 }
@@ -195,7 +219,7 @@ i.fas.fa-bars {
     padding-bottom: 30px;
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
     background-color: #fff;
   }
@@ -258,7 +282,7 @@ i.fas.fa-bars {
     }
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
   }
 }
@@ -272,7 +296,7 @@ i.fas.fa-bars {
     letter-spacing: 0.3em;
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
   }
 
@@ -295,12 +319,23 @@ i.fas.fa-bars {
     letter-spacing: 0.3em;
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
   }
 
   p {
     font-family: $contentFont;
+  }
+
+  img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+
+  h6 {
+    font-weight: 300;
+    padding-top: 20px;
   }
 }
 
@@ -314,7 +349,7 @@ i.fas.fa-bars {
     letter-spacing: 0.3em;
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
     background-color: #fff;
   }
@@ -372,6 +407,70 @@ i.fas.fa-bars {
       transition: 0.5s;
     }
   }
+
+  .post {
+    #content {
+      padding-bottom: 0;
+      margin: 0;
+    }
+
+    #post1 {
+      padding: 0;
+
+      img {
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    }
+
+    #cat1 {
+      @include category();
+      background-color: #97e965;
+    }
+
+    #post2 {
+      padding: 0;
+
+      img {
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    }
+    #cat2 {
+      @include category();
+      background-color: #f0b331;
+    }
+
+    #post3 {
+      padding: 0;
+
+      img {
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    }
+    #cat3 {
+      @include category();
+      background-color: #317df0;
+    }
+
+    #post4 {
+      padding: 0;
+
+      img {
+        width: 50px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+    }
+    #cat4 {
+      @include category();
+      background-color: #f03131;
+    }
+  }
 }
 
 .mid-footer {
@@ -385,7 +484,7 @@ i.fas.fa-bars {
     color: #000000;
   }
 
-  span:before {
+  .divi:before {
     @include span-div;
     background-color: rgb(0, 0, 0);
   }
@@ -420,6 +519,25 @@ i.fas.fa-bars {
 
   .section-one {
     height: 1000px;
+  }
+
+  .nav-link {
+    border-top: none;
+
+    &:hover {
+      border-top: none;
+    }
+  }
+}
+
+.footer {
+  background-color: #0e0d0d;
+  color: #fff;
+  padding: 10px;
+
+  p {
+    padding: 0;
+    margin: 0;
   }
 }
 
