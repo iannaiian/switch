@@ -32,9 +32,10 @@ $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
 
 // this is for mix ins
 
-body {
+* {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .row {
@@ -46,7 +47,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  margin-top: 25px;
+  margin-top: 0;
 }
 
 i.fas.fa-bars {
@@ -74,7 +75,7 @@ i.fas.fa-bars {
 
 .section-one {
   background: url("../images/bg1.jpg");
-  height: 800px;
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -85,6 +86,7 @@ i.fas.fa-bars {
     font-weight: 100;
     text-shadow: $textShadow;
     border-top: 5px solid transparent;
+    text-align: center;
 
     &:hover {
       border-top: 5px solid $primaryClr;
@@ -93,19 +95,17 @@ i.fas.fa-bars {
 
   .navbar-brand {
     position: absolute;
-    left: 48%;
+    left: 46.5%;
     font-family: "Lobster", cursive;
     font-size: 1.8em;
     color: #fff;
     text-shadow: $textShadow;
-
-    &:hover {
-      color: #fff;
-    }
+    padding: 0;
   }
 
   .navbar {
     padding: 0 1rem;
+    background-color: #00000057;
   }
 
   .brand-stamp {
@@ -544,6 +544,64 @@ i.fas.fa-bars {
 @media (min-width: 1900px) {
   .brand-stamp {
     height: 70vh !important;
+  }
+}
+
+@media (max-width: 780px) and (min-width: 600px) {
+  #post1 img {
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+  #post2 img {
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+  #post3 img {
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+  #post4 img {
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+  .team img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  #post1 img {
+    width: 100% !important;
+  }
+  #post2 img {
+    width: 100% !important;
+  }
+  #post3 img {
+    width: 100% !important;
+  }
+  #post4 img {
+    width: 100% !important;
+  }
+  .team img {
+    width: 100px;
+  }
+
+  .pre-footer h5 {
+    padding-top: 50px;
+  }
+
+  nav.navbar.navbar-expand-lg.fixed-top {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0000004a;
+  }
+  .navbar-collapse {
+    padding-bottom: 20px;
+  }
+
+  .navbar-brand {
+    position: relative !important;
+    left: auto !important;
   }
 }
 
