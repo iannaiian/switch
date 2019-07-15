@@ -20,19 +20,19 @@ $(".owl-carousel").owlCarousel({
   }
 });
 
-$(function () {
+$(function() {
   var header = $(".navbar");
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 200) {
-      header.removeClass('navbar').addClass("navbar-dark");
+      header.removeClass("navbar").addClass("navbar-dark");
     } else {
-      header.removeClass("navbar-dark").addClass('navbar');
+      header.removeClass("navbar-dark").addClass("navbar");
     }
   });
 });
 
-$('.parallax-window').parallax({
-  imageSrc: '../images/bg1.jpg'
+$(".parallax-window").parallax({
+  imageSrc: "../images/bg1.jpg"
 });

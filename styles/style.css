@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+body {
+  position: relative;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +86,7 @@ i.fas.fa-bars {
   text-align: center;
 }
 
-.section-one .navbar-dark .nav-link:hover {
+.section-one .navbar-dark .nav-link:active, .section-one .navbar-dark .nav-link:hover {
   border-top: 5px solid #73c74f;
 }
 
@@ -101,7 +105,7 @@ i.fas.fa-bars {
   text-align: center;
 }
 
-.section-one .navbar .nav-link:hover {
+.section-one .navbar .nav-link:active, .section-one .navbar .nav-link:hover {
   border-top: 5px solid #73c74f;
 }
 
