@@ -43,25 +43,17 @@ i.fas.fa-bars {
   color: #7dc5ff;
 }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 .section-one {
-  background: url("../images/bg1.jpg");
+  background: url("images/bg1.jpg");
   height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.section-one .nav-link {
-  color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
-  border-top: 5px solid transparent;
-  text-align: center;
-}
-
-.section-one .nav-link:hover {
-  border-top: 5px solid #73c74f;
 }
 
 .section-one .navbar-brand {
@@ -74,9 +66,43 @@ i.fas.fa-bars {
   padding: 0;
 }
 
-.section-one .navbar {
+.section-one .navbar-dark {
   padding: 0 1rem;
   background-color: #00000057;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section-one .navbar-dark .nav-link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+  border-top: 5px solid transparent;
+  text-align: center;
+}
+
+.section-one .navbar-dark .nav-link:hover {
+  border-top: 5px solid #73c74f;
+}
+
+.section-one .navbar {
+  padding: 0 1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.section-one .navbar .nav-link {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
+  border-top: 5px solid transparent;
+  text-align: center;
+}
+
+.section-one .navbar .nav-link:hover {
+  border-top: 5px solid #73c74f;
 }
 
 .section-one .brand-stamp {

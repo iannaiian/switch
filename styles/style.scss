@@ -3,8 +3,10 @@
 
 // this is for variables
 $primaryClr: #73c74f;
-$headingFont: "Montserrat", sans-serif;
-$contentFont: "Open Sans", sans-serif;
+$headingFont: "Montserrat",
+sans-serif;
+$contentFont: "Open Sans",
+sans-serif;
 $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
 // this is for variables
 
@@ -65,33 +67,29 @@ i.fas.fa-bars {
   .fa-dribbble {
     color: #f03131;
   }
+
   .fa-facebook {
     color: #317df0;
   }
+
   .fa-twitter {
     color: #7dc5ff;
   }
 }
 
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 .section-one {
-  background: url("../images/bg1.jpg");
+  background: url("images/bg1.jpg");
   height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  .nav-link {
-    color: #fff;
-    font-family: $headingFont;
-    font-weight: 100;
-    text-shadow: $textShadow;
-    border-top: 5px solid transparent;
-    text-align: center;
 
-    &:hover {
-      border-top: 5px solid $primaryClr;
-    }
-  }
 
   .navbar-brand {
     position: absolute;
@@ -103,10 +101,47 @@ i.fas.fa-bars {
     padding: 0;
   }
 
-  .navbar {
+  .navbar-dark {
     padding: 0 1rem;
     background-color: #00000057;
+    transition: 0.5s ease-in-out;
+
+    .nav-link {
+      color: #fff;
+      font-family: $headingFont;
+      font-weight: 100;
+      text-shadow: $textShadow;
+      border-top: 5px solid transparent;
+      text-align: center;
+
+
+      &:hover {
+        border-top: 5px solid $primaryClr;
+
+      }
+    }
+
   }
+
+  .navbar {
+    padding: 0 1rem;
+    transition: 0.5s ease-in-out;
+
+    .nav-link {
+      color: #fff;
+      font-family: $headingFont;
+      font-weight: 100;
+      text-shadow: $textShadow;
+      border-top: 5px solid transparent;
+      text-align: center;
+
+
+      &:hover {
+        border-top: 5px solid $primaryClr;
+      }
+    }
+  }
+
 
   .brand-stamp {
     height: 100vh;
@@ -438,6 +473,7 @@ i.fas.fa-bars {
         border-radius: 5px;
       }
     }
+
     #cat2 {
       @include category();
       background-color: #f0b331;
@@ -452,6 +488,7 @@ i.fas.fa-bars {
         border-radius: 5px;
       }
     }
+
     #cat3 {
       @include category();
       background-color: #317df0;
@@ -466,6 +503,7 @@ i.fas.fa-bars {
         border-radius: 5px;
       }
     }
+
     #cat4 {
       @include category();
       background-color: #f03131;
@@ -552,18 +590,22 @@ i.fas.fa-bars {
     margin-top: 25px;
     margin-left: -25px;
   }
+
   #post2 img {
     margin-top: 25px;
     margin-left: -25px;
   }
+
   #post3 img {
     margin-top: 25px;
     margin-left: -25px;
   }
+
   #post4 img {
     margin-top: 25px;
     margin-left: -25px;
   }
+
   .team img {
     width: 100px;
   }
@@ -573,15 +615,19 @@ i.fas.fa-bars {
   #post1 img {
     width: 100% !important;
   }
+
   #post2 img {
     width: 100% !important;
   }
+
   #post3 img {
     width: 100% !important;
   }
+
   #post4 img {
     width: 100% !important;
   }
+
   .team img {
     width: 100px;
   }
@@ -595,6 +641,7 @@ i.fas.fa-bars {
     padding-bottom: 10px;
     background-color: #0000004a;
   }
+
   .navbar-collapse {
     padding-bottom: 20px;
   }
