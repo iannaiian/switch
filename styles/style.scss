@@ -634,9 +634,14 @@ i.fas.fa-bars {
   }
 
   nav.navbar.navbar-expand-lg.fixed-top {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     background-color: #0000004a;
+  }
+
+  .navbar-dark {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .navbar-collapse {
@@ -644,7 +649,8 @@ i.fas.fa-bars {
   }
 
   .navbar-brand {
-    position: relative !important;
+    top: 10px;
+    right: 0 !important;
     left: auto !important;
   }
 }
