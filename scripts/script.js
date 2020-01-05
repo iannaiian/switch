@@ -34,5 +34,5 @@ $(function () {
 });
 
 $('.parallax-window').parallax({
-  imageSrc: '../images/bg1.jpg'
+  imageSrc: 'images/bg1.jpg'
 });
