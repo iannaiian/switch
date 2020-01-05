@@ -3,10 +3,8 @@
 
 // this is for variables
 $primaryClr: #73c74f;
-$headingFont: "Montserrat",
-sans-serif;
-$contentFont: "Open Sans",
-sans-serif;
+$headingFont: "Montserrat", sans-serif;
+$contentFont: "Open Sans", sans-serif;
 $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
 // this is for variables
 
@@ -33,6 +31,10 @@ $textShadow: 2px 2px 3px rgba(0, 0, 0, 0.55);
 }
 
 // this is for mix ins
+
+body {
+  position: relative;
+}
 
 * {
   margin: 0;
@@ -89,8 +91,6 @@ i.fas.fa-bars {
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-
-
   .navbar-brand {
     position: absolute;
     left: 46.5%;
@@ -114,13 +114,11 @@ i.fas.fa-bars {
       border-top: 5px solid transparent;
       text-align: center;
 
-
+      &:active,
       &:hover {
         border-top: 5px solid $primaryClr;
-
       }
     }
-
   }
 
   .navbar {
@@ -135,13 +133,12 @@ i.fas.fa-bars {
       border-top: 5px solid transparent;
       text-align: center;
 
-
+      &:active,
       &:hover {
         border-top: 5px solid $primaryClr;
       }
     }
   }
-
 
   .brand-stamp {
     height: 100vh;
@@ -637,9 +634,14 @@ i.fas.fa-bars {
   }
 
   nav.navbar.navbar-expand-lg.fixed-top {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
     background-color: #0000004a;
+  }
+
+  .navbar-dark {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
 
   .navbar-collapse {
@@ -647,7 +649,8 @@ i.fas.fa-bars {
   }
 
   .navbar-brand {
-    position: relative !important;
+    top: 10px;
+    right: 0 !important;
     left: auto !important;
   }
 }
